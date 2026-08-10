@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Velvet Touch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <div class="product-detail-container">
+        <div class=" product-slider-section">
+            <div class="slider-container">
+                <img id="main-product-img" src="box9-image.jpg" alt="Hydrating Cosmetic Cream jar">
+            </div>
+
+           <div class="thumbnail-wrapper">
+            <button class="slider-btn prev-btn" onclick="prevImage()">&#10094;</button>
+
+        <div class="thumbnail-container">
+            <img src="box9-image.jpg" class="thumb-img active" onclick="changeImage('box9-image.jpg',0)" alt="Hydrating Cosmetic Cream jar">
+            <img src="image1.jpg" class="thumb-img " onclick="changeImage('image1.jpg',1)" alt="image 1">
+            <img src="image2.jpg" class="thumb-img " onclick="changeImage('image2.jpg',2)" alt="image 2">
+            <img src="image3.jpg" class="thumb-img " onclick="changeImage('image3.jpg',3)" alt="image 3">
+            <img src="image4.jpg" class="thumb-img " onclick="changeImage('image4.jpg',4)" alt="image 4">
+       </div>
+
+       <button class="slider-btn next-btn" onclick="nextImage()">&#10095;</button>
+       </div>
+       </div>
+
+     <div class="product-info-section">
+
+        <span class="company-name">Velvet Touch</span>
+        <h1 class="product-title">Hydrating Cosmetic Cream jar</h1>
+
+        <div class="rating-stars">
+            <sapn class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</sapn>
+            <span class="review-count">4.0(1,250 reviews)</span>
+        </div>
+
+        <div class="price-box">
+            <span id="product-price"><b>$39</b><sup>99</sup></span>
+            <span id="product-discount">-20%</span>
+        </div>
+
+        <div class="action-buttons">
+        <button class="cart-btn">Add to Cart</button>
+        <button class="buy-btn">Buy Now</button>
+        </div>
+        
+       <div class="product-description">
+        <h3>Product-detail</h3>
+        <p>Velvet Touch Hydrating Cosmetic Cream is specially designed to provide deep and long-lasting moisture to the skin. Its lightweight formula helps keep the skin feeling soft, smooth and refreshed throughout the day. The cream absorbs easily into the skin without leaving a heavy or sticky feeling. It is suitable for everyday Skincare and can be used as part of your morning or evening skincare routine. Its nourishing formula helps maintain a fresh, hydrated and comfortable skin feel.</p>
+        <ul>
+            <li><b>Deep Hydrating Formula:</b> Specially designed to provide deep, long-lasting moisture to dry and dull skin, keeping it soft and smooth all day long.</li>
+            <li><b>Daily Skincare Routine:</b> Perfect for everyday use and suitable for both your morning and evening skincare routine.</li>
+            <li><b>nourishing Ingredients:</b> Enriched with premium ingredients that help maintain a fresh, hydrated, and comfortable skin feel.</li>
+            <li><b>Suitable For All Skin Types:</b> Gently formulated to work safely on normal, combination, and dry skin types.</li>
+        </ul>
+       </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

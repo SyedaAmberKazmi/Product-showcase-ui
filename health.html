@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amazon Clone - Health &  Personal Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+        <div class="nav-logo border">
+            <div class="logo"></div>
+        </div>
+
+        <div class="nav-address border">
+            <p class="add-first">Deliver to</p>
+            <div class="add-icon">
+               <i class="fa-solid fa-location-dot"></i>
+                <p class="add-second">Pakistan</p>
+            </div>
+        </div>
+          
+        <div class="nav-search">
+            <select class="search-select">
+                <option>All</option>
+            </select>
+            <input placeholder="Search Amazon" class="search-input" id="searchInput">
+            <div class="search-icon" onclick="performSearch()">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        </div>
+
+        <div class="nav-signin border">
+            <p><span class="nav-first">Hello, sign in</span></p>
+            <p class="nav-second">Account & Lists</p>
+        </div>
+
+        <div class="nav-return border">
+            <p><span class="nav-first">Returns</span></p>
+            <p class="nav-second">& Orders</p>
+        </div>
+
+        <div class="nav-cart border">
+           <i class="fa-solid fa-cart-shopping"></i>
+            Cart <span id="cart-count">0</span>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all border">
+            <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                 <p>Sell</p>
+            </div>
+            <div class="panel-deals border">
+                <p>Shop deals in Electronics</p>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="page-title">Personal Care</h1>
+    <div class="shop-section">
+
+        <div class="box box9">
+            <div class="box-content">
+                <span class="company-name">Velvet Touch</span>
+                <h2>Hydrating Cosmetic Cream jar</h2>
+                <a href="Product-detail.html">
+             <div class="box-img" style="background-image: url('box9-image.jpg');"></div> 
+             </a>
+
+                <div id="product-discount">-20%$</div>
+                <div id="product-price"><sup>$</sup>29<sup>99</sup></div>
+        
+                <div class="rating-container">
+                <div class="stars">
+                <span class="stars">&#9733;</span>
+                <span class="stars">&#9733;</span>
+                <span class="stars">&#9733;</span>
+                <span class="stars">&#9733;</span>
+                <span class="stars">&#9733;</span>
+                <span class="rating-text">4.0</span>
+                <span class="review-count">(1,250 reviews)</span>
+            </div>
+            </div>
+            <p><a href="Product-detail.html" style="color: #007185;">See more</a></p>
+      </div>
+      </div>
+    
+    
+        <div class="box box10">
+            <div class="box-content">
+                <span class="company-name">Curology</span>
+                <h2>Cleanser & Moisturizer Set</h2>
+                <div class="box-img"></div>
+                <p class="price">$24.99</p>
+                 <p>See more</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Cleanser & Moisturizer Set')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box box11">
+            <div class="box-content">
+                <span class="company-name">Ela De Pure</span>
+                <h2>Hydrating Deep Moisture Body Lotion</h2>
+                <div class="box-img"></div>
+                <p class="price">$18.50</p>
+                <p>See more</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Hydrating Deep Moisture Body Lotion')">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="box box12">
+            <div class="box-content">
+            <span class="company-name">Vya Naturals</span>
+            <h2>Vitamin C Set</h2>
+            <div class="box-img"></div>
+            <p class="price">$32.00</p>
+             <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Vitamin C Set')">Add to Cart</button>
+            </div>
+        </div>
+
+       <div class="box box13">
+        <div class="box-content">
+            <span class="company-name">Ela De Pure</span>
+            <h2>Moisturizing Shampoo & Conditioner Set</h2>
+            <div class="box-img"></div>
+            <p class="price">$29.95</p>
+            <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Moisturizing Shampoo & Conditioner Set')">Add to Cart</button>
+        </div>
+       </div>
+
+       <div class="box box14">
+        <div class="box-content">
+            <span class="company-name">Aura Aesthetics</span>
+            <h2>Luxury Matte Black Skincare Kit</h2>
+            <div class="box-img"></div>
+            <p class="price">$19.99</p>
+             <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Luxury Matte Black Skincare Kit')">Add to Cart</button>
+        </div>
+       </div>
+
+       <div class="box box15">
+        <div class="box-content">
+            <span class="company-name">Ela De Pure</span>
+            <h2>Retinol Serum & Gel Cleanser Trio</h2>
+            <div class="box-img"></div>
+            <p class="price">$27.99</p>
+            <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Retinol Serum & Gel Cleanser Trio')">Add to Cart</button>
+        </div>
+       </div>
+
+       <div class="box box16">
+        <div class="box-content">
+            <span class="company-name">Ela De Pure</span>
+            <h2>Moisturizing Shampoo & Argan Oil</h2>
+            <div class="box-img"></div>
+            <p class="price">$24.99</p>
+             <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Moisturizing Shampoo & Argan Oil')">Add to Cart</button>
+        </div>
+       </div>
+       
+       <div class="box box17">
+        <div class="box-content">
+            <span class="company-name">Plantadea</span>
+            <h2>Plantadea Bio Skincare Set</h2>
+            <div class="box-img"></div>
+            <p class="price">$39.99</p>
+            <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Plantadea Bio Skincare Set')">Add to Cart</button>
+        </div>
+       </div>
+
+       <div class="box  box18">
+        <div class="box-content">
+            <span class="company-name">Plantadea</span>
+          <h2>Bio Cream Main(Hand Cream)</h2>
+          <div class="box-img"></div>
+            <p class="price">$14.99</p>
+             <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Bio Cream Main Hand Cream')">Add to Cart</button>
+          </div>
+        </div>
+    
+      <div class="box box19">
+        <div class="box-content">
+            <span class="company-name">The Ordinary</span>
+            <h2>Hydrating Serum & Cream Set</h2>
+            <div class="box-img"></div>
+            <p class="price">$32.99</p>
+             <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Hydrating Serum & Cream Set')">Add to Cart</button>
+        </div>
+      </div>
+
+       <div class="box box20">
+       <div  class="box-content">
+        <span class="company-name">Sherris Professional </span>
+        <h2>Sugar Paste for Depilation</h2>
+        <div class="box-img"></div>
+        <p class="price">$28.99</p>
+         <p>See more</p>
+        <button class="add-to-cart-btn" onclick="addToCart('Sugar Paste for Depilation')">Add to Cart</button>
+       </div>
+       </div>
+
+        <div class="box box21">
+       <div  class="box-content">
+        <span class="company-name">The Good Hygiene Co.</span>
+        <h2>The Good Peplenishing Body Butter</h2>
+        <div class="box-img"></div>
+        <p class="price">$24.99</p>
+        <p>See more</p>
+        <button class="add-to-cart-btn" onclick="addToCart('The Good Peplenishing Body Butter')">Add to Cart</button>
+       </div>
+       </div>
+      
+       <div class="box box22">
+        <div class="box-content">
+            <span class="company-name">Lumin</span>
+            <h2>Charcoal Cleanser</h2>
+            <div class="box-img"></div>
+            <p class="price">$85.00</p>
+            <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Charcoal Cleanser')">Add to Cart</button>
+        </div>
+       </div>
+      
+      <div class="box box23">
+        <div class="box-content">
+            <span class="company-name">Lernberger Stafsing</span>
+            <h2>Grooming & Skincare Kit</h2>
+            <div class="box-img"></div>
+            <p class="price">$65.00</p>
+            <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Grooming & Skincare Kit')">Add to Cart</button>
+        </div>
+       </div> 
+
+        <div class="box box24">
+        <div class="box-content">
+            <span class="company-name">Ela De Pure</span>
+            <h2>Body Care Kit</h2>
+            <div class="box-img"></div>
+            <p class="price">$45.00</p>
+            <p>See more</p>
+            <button class="add-to-cart-btn" onclick="addToCart('Body Care Kit')">Add to Cart</button>
+        </div>
+       </div> 
+    
+    </div>
+       <footer>
+        <div class="foot-panel1">
+            Back to Top
+        </div>
+
+        <div class="foot-panel2">
+            <ul>
+                <p>Get to Know Us</p>
+                <a>Careers</a>
+                <a>Blog</a>
+                <a>About Amazon</a>
+                <a>Investor Relations</a>
+                <a>Amazon Devices</a>
+                <a>Amazon Science</a>
+            </ul>
+
+            <ul>
+                <p>Make Money with Us</p>
+                <a>Sell products on Amazon</a>
+                <a>Sell on Amazon Business</a>
+                <a>Sell apps on Amazon</a>
+                <a>Become an Affiliate</a>
+                <a>Advertise Your Products</a>
+                <a>Self-Publish with Us</a>
+            </ul>
+
+             <ul>
+                <p>Amazon Payment Products</p>
+                <a>Amazon Business Card</a>
+                <a>Shop with Points</a>
+                <a>Reload Your Balance</a>
+                <a>Amazon Currency Converter</a>
+            </ul>
+
+            <ul>
+                <p>Let Us Help You</p>
+                <a>Amazon and COVID-19</a>
+                <a>Your Account</a>
+                <a>Your Orders</a>
+                <a>Shipping Rates & Policies</a>
+                <a>Returns & Replacement</a>
+                <a>Amazon Assistant</a>
+            </ul>
+        </div>
+
+        <div class="foot-panel3">
+            <div class="logo"></div>
+        </div>
+
+        <div class="foot-panel4">
+            <div class="pages">
+            <a>Conditions of Use</a>
+            <a>Privacy Notice</a>
+            <a>Your Ads Privacy  Choices</a>
+            </div>
+            <div class="copy right">
+                1996-2023, Amazon.com, Inc. or its affiliates
+            </div>
+        </div>
+     </footer>
+     <script src="script.js"></script>
+     
+</body>
+</html>
