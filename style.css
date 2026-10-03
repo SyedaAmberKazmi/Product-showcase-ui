@@ -224,7 +224,7 @@ body{
     gap: 12px;
     flex-wrap: nowrap;
     margin-left: 10px;
-    overflow-x: auto;
+    overflow-x: visible;
     white-space: nowrap;
     flex-shrink: 1;
     flex-grow: 1;
