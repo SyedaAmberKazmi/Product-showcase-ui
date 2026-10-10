@@ -60,7 +60,7 @@ body{
 }
 
 .logo {
-    background-image: url("logo.jpeg");
+    background-image: url("./logo.jpeg");
     height: 50px;
     width: 120px;
     background-size: contain;
@@ -496,7 +496,7 @@ ul a {
 }
 
 .logo {
-    background-image: url("logo.jpeg");
+    background-image: url("./logo.jpeg");
     height: 50px;
     width: 140px;
     background-size: cover;
