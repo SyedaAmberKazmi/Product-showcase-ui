@@ -496,7 +496,7 @@ ul a {
 }
 
 .logo {
-    background-image: url("logo.png");
+    background-image: url("logo.webp");
     height: 50px;
     width: 140px;
     background-size: cover;
