@@ -60,7 +60,7 @@ body{
 }
 
 .logo {
-    background-image: url("logo.jpg");
+    background-image: url("logo.png");
     height: 50px;
     width: 120px;
     background-size: contain;
@@ -496,7 +496,7 @@ ul a {
 }
 
 .logo {
-    background-image: url("logo.jpg");
+    background-image: url("logo.png");
     height: 50px;
     width: 140px;
     background-size: cover;
@@ -630,7 +630,7 @@ ul a {
 }
 
 .logo {
-    background-image: url("logo.jpg");
+    background-image: url("logo.png");
     height: 50px;
     width: 120px;
     background-size: contain;
@@ -1133,7 +1133,7 @@ ul a {
 }
 
 .logo {
-    background-image: url("logo.jpg");
+    background-image: url("logo.png");
     height: 50px;
     width: 140px;
     background-size: cover;
